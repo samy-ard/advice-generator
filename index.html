@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <h1 class="card-title">Advice #<span id="adviceID">117</span></h1>
+      <div class="card-body">
+        <blockquote class="advice-quote">
+          "<span id="advice">It is easy to sit up and take notice, what's difficult is getting up and taking action.</span>"
+        </blockquote>
+        <img class="divider lg-hide" src="./images/pattern-divider-mobile.svg" alt="Pattern Divider">
+        <img class="divider lg-show" src="./images/pattern-divider-desktop.svg" alt="Pattern Divider">
+      </div>
+      <a href="#" class="rollDice" title="Generate advice"><img src="./images/icon-dice.svg" alt="Dice Button"></a>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

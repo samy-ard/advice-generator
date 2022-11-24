@@ -1,0 +1,121 @@
+:root {
+	--botticelli: hsl(193, 38%, 86%);
+	--aquamarine: hsl(150, 100%, 66%);
+	--teal: hsla(150, 100%, 66%, 25%);
+	--bayoux: hsl(217, 19%, 38%);
+	--oxford: hsl(217, 19%, 24%);
+	--ebony: hsl(218, 23%, 16%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--aquamarine);
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+	letter-spacing: 0.2125rem;
+}
+
+.lg-show {
+	display: none;
+}
+
+.page {
+	padding: 7.5rem 1rem 14.5rem;
+	background-color: var(--ebony);
+}
+
+.card {
+	width: 100%;
+	max-width: 21.4375rem;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	padding: 2.625rem 1rem 2.125rem;
+	border-radius: 0.5rem;
+	color: var(--botticelli);
+	background-color: var(--oxford);
+	z-index: 100;
+}
+
+.card-title {
+	font-size: 0.6875rem;
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.card-body {
+	padding: 1.625rem 0.5rem;
+}
+
+.advice-quote {
+	margin: 0 0 1.5rem;
+	font-size: 1.625rem;
+	line-height: 1.2692307;
+	letter-spacing: -0.075rem;
+}
+
+.divider {
+	margin: 0 auto;
+}
+
+.rollDice {
+	position: absolute;
+	left: 50%;
+	bottom: -2rem;
+	padding: 1.25rem 1.25rem;
+	border-radius: 100%;
+	background-color: var(--aquamarine);
+	transform: translateX(-50%);
+}
+
+.rollDice:hover, .rollDice:focus {
+	outline: none;
+	box-shadow: 0 0 2rem 1rem var(--teal);
+}
+
+.rollDice img {
+	display: block;
+}
+
+
+@media screen and (min-width: 1200px) {
+	.lg-show {
+		display: block;
+	}
+
+	.lg-hide {
+		display: none;
+	}
+
+	.page {
+		padding-top: 13.875rem;
+		min-height: 100vh;
+	}
+
+	.card {
+		border-radius: 1rem;
+		max-width: 33.75rem;
+		padding: 3.1875rem 2rem 2.9375rem;
+	}
+
+	.card-title {
+		font-size: 0.875rem;
+	}
+
+	.advice-quote {
+		font-size: 1.75rem;
+		line-height: 1.32142857;
+		letter-spacing: -0.01875rem;
+		margin-bottom: 2.625rem;
+	}
+}
